@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+.company-name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  animation: fade-in 2s forwards;
+  opacity: 0;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #000000;
+  margin-left: 10px;
+  animation: slide-up 2s 1s forwards;
+  opacity: 0;
+}
+
+.logo-icon {
+  position: relative;
+  width: 80px;
+  height: 70px;
+  margin-right: 20px;
+  transition: width 9s;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: #212a3396;
+  border-radius: 50%;
+  animation: rotate 4s infinite linear;
+  box-shadow: 0 0 10px rgba(161, 121, 121, 0.5);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #007bff;
+  animation: move 2s infinite ease-in-out;
+} 
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(460deg);
+  }
+} 
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translate(40, 100%);
+  }
+  100% {
+    transform: translate(100, 40);
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 50%;
+  }
+} 
+@keyframes move {  
+ 100%  {
+          background-color:rgb(5, 5, 5);
+           left:0px; 
+           top:0px;
+}
+  35%  {
+         background-color:rgb(88, 88, 75);
+          left:200px; 
+          top:0px;
+}
+  50%  {
+        background-color:rgb(6, 6, 32);
+         left:200px; 
+         top:200px;
+}
+  75%  {
+        background-color:green;
+         left:0px;
+          top:200px;
+}
+  100% {
+         background-color:rgb(109, 3, 3); 
+         left:0px;
+          top:0px;
+}
+
+}
+
+</style>
+</head>
+   
+<body>
+
+    <div class="logo">
+        <span class="company-name"><i> NRRehman </i> </span>
+        <span class="tagline">Innovating Tomorrow</span>
+        <div class="logo-icon">
+          <div class="circle"></div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+</body>
+</html>
